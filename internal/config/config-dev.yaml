@@ -1,0 +1,23 @@
+server:
+  address: "0.0.0.0:8080"
+
+app:
+  name: "goiot"
+  version: "0.1.0"
+
+
+logger:
+  path: "./logs"
+  file: "{Y-m-d}.log"
+  level: "all"
+  timeFormat: "2006-01-02 15:04:05.000"
+  stdout: true
+  header: true
+
+mqtt:
+  address: ":1883"
+
+sqlite:
+  path: "./data/goiot.db"
+  username: "admin"
+  password: "goiot-local-dev"

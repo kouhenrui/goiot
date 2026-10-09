@@ -1,0 +1,5 @@
+2026-10-09 22:52:15.070 [INFO] {f8f4330816e4dc18e898337ff57dfc5a} http server listening on 0.0.0.0:8080
+2026-10-09 22:53:25.513 [INFO] shutting down application
+2026-10-09 22:53:25.513 [INFO] http server stopped
+2026-10-09 22:53:25.514 [INFO] sqlite closed
+2026-10-09 22:53:25.514 [INFO] {f8f4330816e4dc18e898337ff57dfc5a} app stopped
