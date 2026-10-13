@@ -9,7 +9,6 @@ import (
 
 func InitLogger(cfg Logger) error {
 	// 设置日志目录
-	fmt.Print(cfg, "9999")
 	if err := glog.SetPath(cfg.Path); err != nil {
 		return fmt.Errorf("set logger path: %w", err)
 	}

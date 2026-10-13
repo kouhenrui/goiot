@@ -39,7 +39,7 @@ func New(ctx context.Context, cfg *config.Config) (*App, error) {
 	deviceAuth := device.NewAuthService(deviceRepo)
 	deviceHandler := handler.NewDeviceHandler(deviceAuth)
 
-	mqttServer, err := mqttinf.NewServer(deviceAuth, cfg.MQTT.Address)
+	mqttServer, err := mqttinf.NewServer(ctx, deviceAuth, cfg.MQTT)
 	if err != nil {
 		return nil, fmt.Errorf("init mqtt server: %w", err)
 	}
@@ -66,14 +66,15 @@ func New(ctx context.Context, cfg *config.Config) (*App, error) {
 }
 
 func (a *App) Start(ctx context.Context) error {
-	glog.Info(ctx, "http server listening on", a.server.Addr)
-
 	go func() {
 		err := a.server.ListenAndServe()
 		if err != nil && !errors.Is(err, http.ErrServerClosed) {
 			glog.Error(ctx, "http server stopped:", err)
 		}
-		if err = a.mqttServer.Start(); err != nil {
+	}()
+
+	go func() {
+		if err := a.mqttServer.Start(); err != nil {
 			glog.Error(ctx, "mqtt server stopped:", err)
 		}
 	}()

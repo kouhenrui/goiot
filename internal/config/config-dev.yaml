@@ -15,7 +15,7 @@ logger:
   header: true
 
 mqtt:
-  address: ":1883"
+  address: "127.0.0.1:1883"
 
 sqlite:
   path: "./data/goiot.db"

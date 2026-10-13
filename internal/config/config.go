@@ -24,7 +24,7 @@ type SQLiteConfig struct {
 	Password string `yaml:"password"`
 }
 type MQTTConfig struct {
-	Address string
+	Address string `yaml:"address"`
 }
 type Logger struct {
 	Path       string `yaml:"path"`
@@ -46,6 +46,9 @@ func Load(ctx context.Context, configDir string) (*Config, error) {
 	var out Config
 	if err := cfg.MustGet(ctx, ".").Struct(&out); err != nil {
 		return nil, fmt.Errorf("parse config: %w", err)
+	}
+	if err := InitLogger(out.Logger); err != nil {
+		return nil, fmt.Errorf("init logger: %w", err)
 	}
 	return &out, nil
 }

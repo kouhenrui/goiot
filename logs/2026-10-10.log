@@ -1,0 +1,18 @@
+2026-10-10 15:30:01.916 [INFO] {685647de881add1801d1df2728e3b1e5} http server listening on 0.0.0.0:8080
+2026-10-10 15:49:23.393 [INFO] shutting down application
+2026-10-10 15:49:23.393 [INFO] http server stopped
+2026-10-10 15:49:23.393 [INFO] sqlite closed
+2026-10-10 15:49:23.393 [INFO] {685647de881add1801d1df2728e3b1e5} app stopped
+2026-10-10 15:51:18.567 [FATA] {4890971cb21bdd18199ce23fe2da46b0} init app failed: init mqtt server: add mqtt listener: listen tcp: address 0.0.0.0::1883: too many colons in address 
+Stack:
+1.  main.main
+    /Users/khr/workSpace/codeSpace/go/goiot/cmd/server/main.go:29
+
+2026-10-10 17:43:35.347 [INFO] shutting down application
+2026-10-10 17:43:35.348 [INFO] http server stopped
+2026-10-10 17:43:35.349 [INFO] sqlite closed
+2026-10-10 17:43:35.349 [INFO] {50dbdbd2c31bdd1877cdd765044c06e3} app stopped
+2026-10-10 17:46:19.186 [INFO] shutting down application
+2026-10-10 17:46:19.187 [INFO] http server stopped
+2026-10-10 17:46:19.188 [INFO] sqlite closed
+2026-10-10 17:46:19.188 [INFO] {2049a364ea21dd186260d74d45f3e757} app stopped

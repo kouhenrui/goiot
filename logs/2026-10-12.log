@@ -1,0 +1,53 @@
+2026-10-12 10:46:58.433 [INFO] shutting down application
+2026-10-12 10:46:58.434 [INFO] http server stopped
+2026-10-12 10:46:58.435 [INFO] sqlite closed
+2026-10-12 10:46:58.435 [INFO] {c0c8454afc21dd181b484d29f76224cf} app stopped
+2026-10-12 16:28:02.598 [INFO] shutting down application
+2026-10-12 16:28:02.600 [INFO] http server stopped
+2026-10-12 16:28:02.601 [INFO] sqlite closed
+2026-10-12 16:28:02.601 [INFO] {18aca1a38cb9dd18774b850c5cae4126} app stopped
+2026-10-12 16:33:53.346 [INFO] shutting down application
+2026-10-12 16:33:53.348 [INFO] http server stopped
+2026-10-12 16:33:53.348 [INFO] sqlite closed
+2026-10-12 16:33:53.348 [INFO] {b8a0c868ddbadd181c84b111c1cbd50e} app stopped
+2026-10-12 17:09:33.084 [INFO] shutting down application
+2026-10-12 17:09:33.084 [INFO] http server stopped
+2026-10-12 17:09:33.085 [INFO] sqlite closed
+2026-10-12 17:09:33.085 [INFO] {38ac5f3a2fbbdd18d1af013fcffe4817} app stopped
+2026-10-12 17:11:58.766 [INFO] shutting down application
+2026-10-12 17:11:58.768 [INFO] http server stopped
+2026-10-12 17:11:58.769 [INFO] sqlite closed
+2026-10-12 17:11:58.769 [INFO] {3093943424bddd18ff7e6d7660e18d80} app stopped
+2026-10-12 17:25:49.296 [INFO] shutting down application
+2026-10-12 17:25:49.296 [INFO] http server stopped
+2026-10-12 17:25:49.296 [INFO] sqlite closed
+2026-10-12 17:25:49.296 [INFO] {f03ed923acbddd18ba9ab111453929ec} app stopped
+2026-10-12 17:26:02.015 [INFO] {985f8e7a04bedd18b663721e30dea032} mqtt message received device mqtt-tcp topic devices/dev_001 payload {
+    "temperature":25.5,
+    "humidity":60,
+    "timestamp":1690000000
+}
+2026-10-12 17:26:07.202 [INFO] shutting down application
+2026-10-12 17:26:07.202 [INFO] http server stopped
+2026-10-12 17:26:07.203 [INFO] sqlite closed
+2026-10-12 17:26:07.203 [INFO] {985f8e7a04bedd18b663721e30dea032} app stopped
+2026-10-12 17:29:15.227 [ERRO] {20fe668333bedd18272fcc4d2d35b9ff} mqtt server stopped: please set Options.InlineClient=true to use this feature 
+Stack:
+1.  goiot/internal/app.(*App).Start.func2
+    /Users/khr/workSpace/codeSpace/go/goiot/internal/app/app.go:78
+
+2026-10-12 17:30:04.127 [INFO] shutting down application
+2026-10-12 17:30:04.128 [INFO] http server stopped
+2026-10-12 17:30:04.129 [INFO] sqlite closed
+2026-10-12 17:30:04.129 [INFO] {20fe668333bedd18272fcc4d2d35b9ff} app stopped
+2026-10-12 17:30:07.588 [INFO] {805b58b43fbedd18a68dbf596a2b17dc} mqtt message received device inline topic devices/dev_001 payload 你好,我已连接到mqtt,正在发送测试消息
+2026-10-12 17:33:02.293 [INFO] shutting down application
+2026-10-12 17:33:02.294 [INFO] http server stopped
+2026-10-12 17:33:02.295 [INFO] sqlite closed
+2026-10-12 17:33:02.295 [INFO] {805b58b43fbedd18a68dbf596a2b17dc} app stopped
+2026-10-12 17:33:05.496 [INFO] {30608b2069bedd18db218351c0d25b95} mqtt message received device inline topic devices/dev_001 payload 你好,我已连接到mqtt,正在发送测试消息
+2026-10-12 17:33:36.118 [INFO] {30608b2069bedd18db218351c0d25b95} mqtt message received device mqtt-tcp topic devices/dev_001 payload {
+    "temperature":25.5,
+    "humidity":60,
+    "timestamp":1690000000
+}

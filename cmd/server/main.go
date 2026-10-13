@@ -24,9 +24,6 @@ func main() {
 	if err != nil {
 		glog.Fatal(ctx, "load config failed:", err)
 	}
-	if err := config.InitLogger(cfg.Logger); err != nil {
-		glog.Fatal(ctx, "init logger failed:", err)
-	}
 	application, err := app.New(ctx, cfg)
 	if err != nil {
 		glog.Fatal(ctx, "init app failed:", err)

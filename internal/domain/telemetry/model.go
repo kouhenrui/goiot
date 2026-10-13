@@ -10,6 +10,7 @@ type Telemetry struct {
 
 	DeviceID   uint   `gorm:"not null;index;comment:设备ID" json:"device_id"`
 	Identifier string `gorm:"type:varchar(128);not null;index;comment:数据类型" json:"identifier"`
+	Payload    string `gorm:"type:json;not null;comment:原始数据" json:"payload"`
 	Value      string `gorm:"type:json;not null;comment:数据值" json:"value"`
 	Timestamp  int64  `gorm:"not null;index;comment:时间戳" json:"timestamp"`
 }
